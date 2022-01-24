@@ -5,10 +5,14 @@ import { INtodo } from '../assets/data/ntodo';
 
 @Injectable()
 export class NtodoService {
-  private _url: string ="/assets/data/ntodos.json";
-  constructor(private http: HttpClient) {}
+  //private _url: string ="/assets/data/ntodos.json";
+  constructor() {}
 
-  getNtodos(): Observable<INtodo[]>{
-    return this.http.get<INtodo[]>(this._url);
+  getNtodos(){
+    return [
+      {"ntodo":"buy a cup of tea"}, 
+      {"ntodo":"sleep for 5 min"}, 
+      {"ntodo":"create an app"}
+    ];
   }
 }
