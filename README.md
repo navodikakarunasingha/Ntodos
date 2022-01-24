@@ -5,4 +5,4 @@ Assist on organizing Ntodos effectively.
 - [ ] Display Ntodos.
 - [ ] Create Ntodos.
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-hsv6tr)
+[Edit on StackBlitz ⚡️](https://ntodos.stackblitz.io)
