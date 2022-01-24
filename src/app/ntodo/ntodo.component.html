@@ -1,7 +1,7 @@
 <div *ngIf="isNtodoExist; then thenBlock; else elseBlock"></div>
 <ng-template #thenBlock>
   <div *ngFor="let Ntodo of Ntodos">
-    <p>{{Ntodo.ntodo}}</p>
+    <p>{{Ntodo.email}}</p>
   </div>
 </ng-template>
 <ng-template #elseBlock>

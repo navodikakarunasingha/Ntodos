@@ -11,6 +11,6 @@ export class NtodoListComponent implements OnInit  {
   public Ntodos = [];
   constructor(private _ntodoService: NtodoService) {}
   ngOnInit() {
-    this.Ntodos = this._ntodoService.getNtodos();
+    this._ntodoService.getNtodos().subscribe(data => this.Ntodos = data);
   }
 }
