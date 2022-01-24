@@ -9,4 +9,9 @@ export class NtodoCreateComponent  {
   public ntodo_create_id = "Ntodo";
   public new_ntodo = "";
   public isDisabled = false;
+
+  addNtodo(){
+    console.log("Add clicked!");
+  }
+
 }

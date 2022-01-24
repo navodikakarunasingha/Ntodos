@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NtodoService } from '../ntodo.service';
 
 @Component({
   selector: 'ntodo-list',
   templateUrl: './ntodo.component.html',
   styleUrls: ['./ntodo.component.css']
 })
-export class NtodoListComponent  {
-  public ntodo_create_id = "Ntodo";
-  public new_ntodo = "";
-  public isDisabled = false;
+export class NtodoListComponent implements OnInit  {
+  public isNtodoExist = true;
+  public Ntodos = [];
+  constructor(private _ntodoService: NtodoService) {}
+  ngOnInit() {
+    this._ntodoService.getNtodos().subscribe(data => this.Ntodos = data);
+  }
 }
