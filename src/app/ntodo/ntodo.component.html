@@ -1,0 +1,9 @@
+<div *ngIf="isNtodoExist; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>
+  <div *ngFor="let Ntodo of Ntodos">
+    <p>{{Ntodo.ntodo}}</p>
+  </div>
+</ng-template>
+<ng-template #elseBlock>
+  <p>No any Ntodos. Please add!</p>
+</ng-template>
