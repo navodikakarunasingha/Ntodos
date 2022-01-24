@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { NtodoTitleComponent } from './ntodotitle/ntodotitle.component';
 import { NtodoCreateComponent } from './ntodocreate/ntodocreate.component';
+import { NtodoListComponent } from './ntodo/ntodo.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, NtodoTitleComponent, NtodoCreateComponent],
+  declarations: [ AppComponent, HelloComponent, NtodoTitleComponent, NtodoCreateComponent, NtodoListComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
