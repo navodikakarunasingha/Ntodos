@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./ntodocreate.component.css']
 })
 export class NtodoCreateComponent  {
-  public distitle = "Ntodo";
+  public ntodo_create_id = "Ntodo";
+  public new_ntodo = "";
+  public isDisabled = false;
 }
