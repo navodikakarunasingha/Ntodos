@@ -10,6 +10,8 @@ import { NtodoListComponent } from './ntodo/ntodo.component';
 import { NtodoService } from './ntodo.service';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 //import { AngularFireModule } from 'angularfire2';
 
 
