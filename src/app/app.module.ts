@@ -9,7 +9,7 @@ import { NtodoCreateComponent } from './ntodocreate/ntodocreate.component';
 import { NtodoListComponent } from './ntodo/ntodo.component';
 import { NtodoService } from './ntodo.service';
 import { HttpClientModule } from '@angular/common/http';
-//import { environment } from '../environments/environment';
+import { environment } from '../environments/environment';
 //import { AngularFireModule } from 'angularfire2';
 
 
