@@ -12,11 +12,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { ItemsComponent } from './item.component';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, HttpClientModule, AngularFireModule.initializeApp(environment.firebase, 'Ntodos')],
-  declarations: [ AppComponent, HelloComponent, NtodoTitleComponent, NtodoCreateComponent, NtodoListComponent],
+  imports: [ BrowserModule, FormsModule, HttpClientModule, AngularFireModule.initializeApp(environment.firebase, 'Ntodos')],
+  declarations: [ AppComponent, HelloComponent, NtodoTitleComponent, NtodoCreateComponent, NtodoListComponent,ItemsComponent ],
   providers: [NtodoService],
   bootstrap:    [ AppComponent ]
 })
