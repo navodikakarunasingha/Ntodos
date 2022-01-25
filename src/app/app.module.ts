@@ -16,7 +16,8 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule, HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)), ],
   declarations: [ AppComponent, HelloComponent, NtodoTitleComponent, NtodoCreateComponent, NtodoListComponent],
   providers: [NtodoService],
   bootstrap:    [ AppComponent ]
