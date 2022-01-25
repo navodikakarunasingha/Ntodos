@@ -17,7 +17,7 @@ import { ItemsComponent } from './item.component';
 
 
 @NgModule({
-  imports: [ BrowserModule, FormsModule, HttpClientModule, ],
+  imports: [ BrowserModule, FormsModule, HttpClientModule, AngularFireModule.initializeApp(environment.firebase)],
   declarations: [ AppComponent, HelloComponent, NtodoTitleComponent, NtodoCreateComponent, NtodoListComponent,ItemsComponent ],
   providers: [NtodoService],
   bootstrap:    [ AppComponent ]
