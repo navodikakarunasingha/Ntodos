@@ -13,10 +13,11 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ItemsComponent } from './item.component';
+//import { ItemService } from './services/item.service';
 
 
 @NgModule({
-  imports: [ BrowserModule, FormsModule, HttpClientModule, AngularFireModule.initializeApp(environment.firebase, 'Ntodos')],
+  imports: [ BrowserModule, FormsModule, HttpClientModule, ],
   declarations: [ AppComponent, HelloComponent, NtodoTitleComponent, NtodoCreateComponent, NtodoListComponent,ItemsComponent ],
   providers: [NtodoService],
   bootstrap:    [ AppComponent ]
